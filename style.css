@@ -1,4 +1,4 @@
-body {
+.bgImage {
 	background-image: url("Images/bg.png");
 	background-size: cover;
 	background-attachment: fixed;
@@ -8,4 +8,84 @@ body {
 	width: 10%;
 	height: 10%;
 	background: #000;
+}
+
+.loginImage{
+	background-image: url("Images/login.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.loginForm{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 10%;
+	left: 33%;
+}
+
+.formLogin {
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	top: 10%;
+ 	left: 19%
+}
+
+.inputText[type="email"]{
+	font-family: Arial;
+	width: 80%;
+ 	padding: 10px;
+  	margin-left: 80px;
+  	box-sizing: border-box;
+  	font-size: 16px;
+  	border-radius: 5px;
+  	border-color: #f2e1e1;
+}
+
+.inputPass[type="password"]{
+	font-family: Arial;
+	width: 80%;
+ 	padding: 10px;
+ 	margin-top: 30px; 
+  	margin-left: 80px;
+  	box-sizing: border-box;
+  	font-size: 16px;
+  	border-radius: 5px;
+  	border-color: #f2e1e1;
+}
+
+.button1[type="submit"]{
+	width: 80%;
+ 	margin-top: 70px; 
+  	margin-left: 80px;
+  	margin-bottom: 10px;
+  	font-size: 16px;
+  	background-color: #f71b1b;
+  	border: none;
+  	border-radius: 5px;
+  	padding: 10px;
+  	color: white;
+}
+
+.button2[type="submit"]{
+	width: 80%;
+ 	margin-top: 10px; 
+  	margin-left: 80px;
+  	margin-bottom: 50px;
+  	font-size: 16px;
+  	background-color: #000;
+  	border: none;
+  	border-radius: 5px;
+  	padding: 10px;
+  	color: white;
+}
+
+hr{
+	width: 60%;
+}
+
+.aLink{	
+	color: #c2c257;
+	font-family: Arial;
+	margin-left: 345px;
 }
