@@ -1,6 +1,6 @@
 .bgImage {
-	background-image: url("Images/bg.png");
-	background-size: cover;
+	background-image: url("Images/bgg.jpg");
+	background-size: contain;
 	background-attachment: fixed;
 }
 
@@ -70,14 +70,14 @@
 .button2[type="submit"]{
 	width: 80%;
  	margin-top: 10px; 
-  	margin-left: 80px;
-  	margin-bottom: 50px;
-  	font-size: 16px;
-  	background-color: #000;
-  	border: none;
-  	border-radius: 5px;
-  	padding: 10px;
-  	color: white;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
 }
 
 hr{
@@ -90,14 +90,9 @@ hr{
 	margin-left: 345px;
 }
 
-.card:hover{
+.cardiet:hover{
     transform: scale(1.05);
   	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
-
-a {
-	text-decoration: none;
-	color: 
 }
 
 .dietForm {
@@ -119,12 +114,12 @@ a {
      padding: 5px;
      grid-gap: 10px;
  }
-  .container{
+  .containerr{
      position: relative;
      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
  }
 
- .container::after{
+ .containerr::after{
      content: "";
      height: 100%;
      width: 100%;
@@ -135,17 +130,17 @@ a {
      opacity: 0.6;
  }
 
- .card{
+ .cardiet{
      background-color: #1c1b29;
      border-radius: 20px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
 
- .container{
+ .containerr{
      position: relative;
      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
  }
- .cards .card .container img{
+ .cards .cardiet .containerr img{
      width: 100%;
      display: block;
      border-radius: 20px 20px 0 0;
@@ -163,4 +158,39 @@ a {
      color: #729fe8;
      font-size: 16px;
      line-height: 30px;
+ }
+
+ hr {
+  color: #2bed34;
+  width: 80%;
+ }
+@keyframes toBigger {
+  0%{
+    border-radius: 0%;
+    transform: translate(10px, 20px);
+    -ms-transform: translate(10px, 20px);
+    -webkit-transform: translate(10px, 20px);
+  }
+
+  100%{
+    border-radius: 20%;
+    transform: translate(20px, 30px);
+    -ms-transform: translate(20px, 30px);
+    -webkit-transform: translate(20px, 30px);
+  }
+}
+ .card:hover {
+    animation-name: toBigger;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+ }
+hr{
+  border-width: 1px 1px 0;
+  border-style: solid;
+  width: 50%;
+  border-color: palevioletred;
+}
+ .bmiText{
+  color: #ffff;
+  font-size: 24px;
  }
